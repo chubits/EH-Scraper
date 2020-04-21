@@ -86,7 +86,9 @@ def parseInfoContent(text):
   elif re.search('English', b['language']):
     info['LanguageISO'] = 'en'
   elif re.search('Japanese', b['language']):
-    info['LanguageISO'] = 'jp'
+    info['LanguageISO'] = 'ja'
+  elif re.search('Russian', b['language']):
+    info['LanguageISO'] = 'ru'
   else:
     info['LanguageISO'] = ''
 
